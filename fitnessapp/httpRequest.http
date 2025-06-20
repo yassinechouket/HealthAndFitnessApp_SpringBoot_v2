@@ -1,0 +1,60 @@
+### GET request to example server
+POST http://localhost:8080/workout/save
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5YXNzaW5lQGdhbWlsLmNvbSIsImlhdCI6MTc1MDQzMDg2NSwiZXhwIjoxNzUwNTE3MjY1fQ.m48MhpQO6D0Yya_VUiX4ubiCtcANQ8bXDM3YAAG9hKQ
+Content-Type: application/json
+
+{
+"type": "cardio",
+  "duration": 30,
+  "caloriesBurned": 1000,
+  "date": "2025-06-14",
+  "user_id": 1
+}
+###
+GET http://localhost:8080/user
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5YXNzaW5lQGdhbWlsLmNvbSIsImlhdCI6MTc1MDQzMDc1MCwiZXhwIjoxNzUwNTE3MTUwfQ.dNR4iTyEcYSLa0o1xP3w-6gnhXwWiXgfYa5d6KLBAKQ
+
+###
+GET http://localhost:8080/workout
+
+###
+GET http://localhost:8080/user/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5YXNzaW5lQGdhbWlsLmNvbSIsImlhdCI6MTc1MDQzMDk4MiwiZXhwIjoxNzUwNTE3MzgyfQ._edHwy7MlV3D1qujd9UQBYH04GkPVZEjuOjSCW_iNB0
+
+###
+GET http://localhost:8080/workout/type/cardio
+
+###
+GET http://localhost:8080/api/v1/demo-controller
+
+###
+POST http://localhost:8080/api/v1/auth/authenticate
+Content-Type: application/json
+
+{
+  "email": "yassine@gamil.com",
+  "password": "1234"
+}
+
+###
+POST http://localhost:8080/api/v1/auth/register
+Content-Type: application/json
+
+{
+  "email": "yassine@gamil.com",
+  "password": "1234",
+  "name": "Yassine",
+  "age": 24,
+  "gender": "MALE",
+  "weight": 70.0,
+  "height": 1.80,
+  "role": "USER"
+}
+
+###
+
+
+
+
+
+
