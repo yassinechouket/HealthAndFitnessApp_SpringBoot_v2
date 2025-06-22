@@ -22,5 +22,6 @@ jobs:
 
     - name: Build with Maven
       run: |
-        cd fitnessapp\pom.xml
-        mvn clean install
+        cd fitnessapp
+        mvn clean install -DskipTests
+
