@@ -26,7 +26,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
     @Override
     protected boolean shouldNotFilter(HttpServletRequest request) {
         String path = request.getServletPath();
-        System.out.println("➡️ shouldNotFilter() path = " + path);
+        System.out.println("shouldNotFilter() path = " + path);
         return new org.springframework.util.AntPathMatcher().match("/api/v1/auth/**", path);
     }
 
